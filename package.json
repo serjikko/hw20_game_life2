@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serjikko/hw20_game_life.git"
+    "url": "git+https://github.com/serjikko/hw20_game_life2.git"
   },
   "author": "SK",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/serjikko/hw20_game_life/issues"
+    "url": "https://github.com/serjikko/hw20_game_life2/issues"
   },
-  "homepage": "https://github.com/serjikko/hw20_game_life#readme",
+  "homepage": "https://github.com/serjikko/hw20_game_life2#readme",
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
