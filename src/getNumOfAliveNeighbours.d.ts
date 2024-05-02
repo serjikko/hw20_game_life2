@@ -5,4 +5,8 @@
  * @param field {number[][]} - состояние поля
  * @return number - число живых соседей
  */
-export declare function getNumOfAliveNeighbours(column: any, row: any, field: any): number;
+export declare function getNumOfAliveNeighbours(
+  column: any,
+  row: any,
+  field: any,
+): number;

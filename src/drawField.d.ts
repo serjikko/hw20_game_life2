@@ -5,4 +5,8 @@
  * @param onCellClick {(x: number, y: number) => void}
  * @returns void
  */
-export declare function drawField(htmlElement: any, field: any, onCellClick: any): void;
+export declare function drawField(
+  htmlElement: any,
+  field: any,
+  onCellClick: any,
+): void;

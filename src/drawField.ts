@@ -7,8 +7,7 @@
  */
 // @ts-ignore
 export function drawField(htmlElement, field, onCellClick) {
-  const rowIterator = (row: number[], rowIndex: number) => {
-    return `<tr>${row
+  const rowIterator = (row: number[], rowIndex: number) => `<tr>${row
       .map((cell, columnIndex) => {
         if (cell === 1) {
           return `<td 
@@ -24,21 +23,22 @@ export function drawField(htmlElement, field, onCellClick) {
       style="background-color:#FFFFFF; height:10px; width:10px;"></td>`;
       })
       .join("")}</tr>`;
-  };
 
   const table = `<table border=1>${field.map(rowIterator).join("")}</table>`;
 
   // eslint-disable-next-line no-param-reassign
   htmlElement.innerHTML = table;
 
-  htmlElement.querySelector("table").addEventListener("click", (ev: MouseEvent) => {
-    const clickedElement = ev.target;
-    // @ts-ignore
-    const x = clickedElement.getAttribute("data-x");
-    // @ts-ignore
-    const y = clickedElement.getAttribute("data-y");
-    if (x >= 0 && y >= 0) {
-      onCellClick(Number(x), Number(y));
-    }
-  });
+  htmlElement
+    .querySelector("table")
+    .addEventListener("click", (ev: MouseEvent) => {
+      const clickedElement = ev.target;
+      // @ts-ignore
+      const x = clickedElement.getAttribute("data-x");
+      // @ts-ignore
+      const y = clickedElement.getAttribute("data-y");
+      if (x >= 0 && y >= 0) {
+        onCellClick(Number(x), Number(y));
+      }
+    });
 }

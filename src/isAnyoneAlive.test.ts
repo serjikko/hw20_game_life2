@@ -28,7 +28,7 @@ describe("isAnyoneAlive", () => {
     },
   ].forEach((el) => {
     it(`should return ${el.expectedResult} for ${JSON.stringify(
-      el.field
+      el.field,
     )}`, () => {
       expect(isAnyoneAlive(el.field)).toBe(el.expectedResult);
     });

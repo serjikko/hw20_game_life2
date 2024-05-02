@@ -20,16 +20,16 @@ export function getNextState(field: string) {
   //   });
 
   if (Array.isArray(field)) {
-    return field.map((row:any, rowIndex:any) =>
-      row.map((cell:any, cellIndex:any) => {
+    return field.map((row: any, rowIndex: any) =>
+      row.map((cell: any, cellIndex: any) => {
         const an = getNumOfAliveNeighbours(cellIndex, rowIndex, field);
         const currentState = getCellState(field, cellIndex, rowIndex);
         const newState = getNewCellState(currentState, an);
         return newState;
-      })
+      }),
     );
-  } else {
+  } 
     // Handle the case when 'field' is not an array
     return []; // or any other appropriate action
-  }
+  
 }

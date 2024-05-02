@@ -11,7 +11,11 @@ import { isAnyoneAlive } from "./isAnyoneAlive";
  * @param htmlElement {HTMLElement} - элемент, в котором будет отрисована игра
  * @returns void
  */
-export function createGameOfLife(sizeX: number, sizeY: number, htmlElement: HTMLElement) {
+export function createGameOfLife(
+  sizeX: number,
+  sizeY: number,
+  htmlElement: HTMLElement,
+) {
   let gameIsRunning = false;
   let timer: number;
 
@@ -23,7 +27,7 @@ export function createGameOfLife(sizeX: number, sizeY: number, htmlElement: HTML
 
   // Создать поле заданного размера
   let field = Array.from({ length: sizeY }).map(() =>
-    Array.from({ length: sizeX }).fill(0)
+    Array.from({ length: sizeX }).fill(0),
   );
 
   const cellClickHandler = (x: number, y: number) => {
@@ -38,9 +42,9 @@ export function createGameOfLife(sizeX: number, sizeY: number, htmlElement: HTML
   // - перерисовать поле
   function stopGame() {
     gameIsRunning = false;
-    const button = document.getElementById('myButton');
+    const button = document.getElementById("myButton");
     if (button) {
-    button.textContent = "Start";
+      button.textContent = "Start";
     }
     // При клике на кнопке `Stop` остановить таймер
     clearInterval(timer);
@@ -49,9 +53,9 @@ export function createGameOfLife(sizeX: number, sizeY: number, htmlElement: HTML
     // При клике по кнопке старт
     // - поменять надпись на `Stop`
     gameIsRunning = true;
-    const button = document.getElementById('myButton');
+    const button = document.getElementById("myButton");
     if (button) {
-    button.textContent = "Stop";
+      button.textContent = "Stop";
     }
     // - запустить таймер для обновления поля
     let timer: number;
@@ -76,11 +80,11 @@ export function createGameOfLife(sizeX: number, sizeY: number, htmlElement: HTML
 
   if (button !== null) {
     button.addEventListener("click", () => {
-    if (!gameIsRunning) {
-      startGame();
-    } else {
-      stopGame();
-    }
-  });
-}
+      if (!gameIsRunning) {
+        startGame();
+      } else {
+        stopGame();
+      }
+    });
+  }
 }

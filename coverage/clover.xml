@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1714251271308" clover="3.2.0">
-  <project timestamp="1714251271308" name="All files">
+<coverage generated="1714680066275" clover="3.2.0">
+  <project timestamp="1714680066275" name="All files">
     <metrics statements="37" coveredstatements="36" conditionals="18" coveredconditionals="17" methods="7" coveredmethods="7" elements="62" coveredelements="60" complexity="0" loc="37" ncloc="37" packages="1" files="5" classes="5"/>
-    <file name="getCellState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life\src\getCellState.ts">
+    <file name="getCellState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life2\src\getCellState.ts">
       <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="12" count="444" type="stmt"/>
       <line num="13" count="444" type="cond" truecount="2" falsecount="0"/>
@@ -12,7 +12,7 @@
       <line num="18" count="102" type="stmt"/>
       <line num="20" count="182" type="stmt"/>
     </file>
-    <file name="getNewCellState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life\src\getNewCellState.ts">
+    <file name="getNewCellState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life2\src\getNewCellState.ts">
       <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
       <line num="2" count="44" type="cond" truecount="2" falsecount="0"/>
       <line num="3" count="11" type="stmt"/>
@@ -22,7 +22,7 @@
       <line num="9" count="4" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
     </file>
-    <file name="getNextState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life\src\getNextState.ts">
+    <file name="getNextState.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life2\src\getNextState.ts">
       <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
       <line num="22" count="8" type="cond" truecount="1" falsecount="1"/>
       <line num="23" count="8" type="stmt"/>
@@ -33,7 +33,7 @@
       <line num="28" count="26" type="stmt"/>
       <line num="33" count="0" type="stmt"/>
     </file>
-    <file name="getNumOfAliveNeighbours.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life\src\getNumOfAliveNeighbours.ts">
+    <file name="getNumOfAliveNeighbours.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life2\src\getNumOfAliveNeighbours.ts">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="11" count="44" type="stmt"/>
       <line num="13" count="44" type="stmt"/>
@@ -44,7 +44,7 @@
       <line num="22" count="44" type="stmt"/>
       <line num="24" count="44" type="stmt"/>
     </file>
-    <file name="isAnyoneAlive.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life\src\isAnyoneAlive.ts">
+    <file name="isAnyoneAlive.ts" path="C:\Users\Сергей\Desktop\учеба\JS\hw20_game_life2\src\isAnyoneAlive.ts">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="7" count="18" type="stmt"/>
       <line num="8" count="18" type="stmt"/>
